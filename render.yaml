@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: astro-race
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    numInstances: 1
+
